@@ -11,5 +11,11 @@ func main() {
 			"Message": "welcome to skill map",
 		})
 	})
+
+	app.GET("/login", func(ctx *gin.Context) {
+		ctx.JSON(200, gin.H{
+			"Message": "Login is required",
+		})
+	})
 	app.Run()
 }
